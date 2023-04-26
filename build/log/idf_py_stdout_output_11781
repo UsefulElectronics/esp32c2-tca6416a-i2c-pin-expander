@@ -1,0 +1,181 @@
+[1/5] cd /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/esp-idf/esptool_py && /home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/ward/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/partition_table/partition-table.bin /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/i2c-simple.bin
+i2c-simple.bin binary size 0x1e8f0 bytes. Smallest app partition is 0x100000 bytes. 0xe1710 bytes (88%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/bootloader/esp-idf/esptool_py && /home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/ward/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/bootloader/bootloader.bin
+Bootloader binary size 0x4980 bytes. 0x3680 bytes (43%) free.
+[2/3] cd /home/ward/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ward/esp/esp-idf -D "SERIAL_TOOL=/home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/ward/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c2" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;--no-stub;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build -P /home/ward/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32c2 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset --no-stub write_flash --flash_mode dio --flash_freq 60m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 i2c-simple.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-C2 (revision v1.0)
+Features: WiFi, BLE
+Crystal is 26MHz
+MAC: 10:97:bd:f3:47:84
+Changing baud rate to 460800
+Changed.
+Enabling default SPI flash mode...
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x0002efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Erasing flash...
+Took 0.24s to erase flash block
+Writing at 0x00000000... (5 %)
+Writing at 0x00000400... (10 %)
+Writing at 0x00000800... (15 %)
+Writing at 0x00000c00... (21 %)
+Writing at 0x00001000... (26 %)
+Writing at 0x00001400... (31 %)
+Writing at 0x00001800... (36 %)
+Writing at 0x00001c00... (42 %)
+Writing at 0x00002000... (47 %)
+Writing at 0x00002400... (52 %)
+Writing at 0x00002800... (57 %)
+Writing at 0x00002c00... (63 %)
+Writing at 0x00003000... (68 %)
+Writing at 0x00003400... (73 %)
+Writing at 0x00003800... (78 %)
+Writing at 0x00003c00... (84 %)
+Writing at 0x00004000... (89 %)
+Writing at 0x00004400... (94 %)
+Writing at 0x00004800... (100 %)
+Wrote 19456 bytes at 0x00000000 in 0.7 seconds (238.2 kbit/s)...
+Hash of data verified.
+Erasing flash...
+Took 1.50s to erase flash block
+Writing at 0x00010000... (0 %)
+Writing at 0x00010400... (1 %)
+Writing at 0x00010800... (2 %)
+Writing at 0x00010c00... (3 %)
+Writing at 0x00011000... (4 %)
+Writing at 0x00011400... (4 %)
+Writing at 0x00011800... (5 %)
+Writing at 0x00011c00... (6 %)
+Writing at 0x00012000... (7 %)
+Writing at 0x00012400... (8 %)
+Writing at 0x00012800... (8 %)
+Writing at 0x00012c00... (9 %)
+Writing at 0x00013000... (10 %)
+Writing at 0x00013400... (11 %)
+Writing at 0x00013800... (12 %)
+Writing at 0x00013c00... (13 %)
+Writing at 0x00014000... (13 %)
+Writing at 0x00014400... (14 %)
+Writing at 0x00014800... (15 %)
+Writing at 0x00014c00... (16 %)
+Writing at 0x00015000... (17 %)
+Writing at 0x00015400... (17 %)
+Writing at 0x00015800... (18 %)
+Writing at 0x00015c00... (19 %)
+Writing at 0x00016000... (20 %)
+Writing at 0x00016400... (21 %)
+Writing at 0x00016800... (21 %)
+Writing at 0x00016c00... (22 %)
+Writing at 0x00017000... (23 %)
+Writing at 0x00017400... (24 %)
+Writing at 0x00017800... (25 %)
+Writing at 0x00017c00... (26 %)
+Writing at 0x00018000... (26 %)
+Writing at 0x00018400... (27 %)
+Writing at 0x00018800... (28 %)
+Writing at 0x00018c00... (29 %)
+Writing at 0x00019000... (30 %)
+Writing at 0x00019400... (30 %)
+Writing at 0x00019800... (31 %)
+Writing at 0x00019c00... (32 %)
+Writing at 0x0001a000... (33 %)
+Writing at 0x0001a400... (34 %)
+Writing at 0x0001a800... (34 %)
+Writing at 0x0001ac00... (35 %)
+Writing at 0x0001b000... (36 %)
+Writing at 0x0001b400... (37 %)
+Writing at 0x0001b800... (38 %)
+Writing at 0x0001bc00... (39 %)
+Writing at 0x0001c000... (39 %)
+Writing at 0x0001c400... (40 %)
+Writing at 0x0001c800... (41 %)
+Writing at 0x0001cc00... (42 %)
+Writing at 0x0001d000... (43 %)
+Writing at 0x0001d400... (43 %)
+Writing at 0x0001d800... (44 %)
+Writing at 0x0001dc00... (45 %)
+Writing at 0x0001e000... (46 %)
+Writing at 0x0001e400... (47 %)
+Writing at 0x0001e800... (47 %)
+Writing at 0x0001ec00... (48 %)
+Writing at 0x0001f000... (49 %)
+Writing at 0x0001f400... (50 %)
+Writing at 0x0001f800... (51 %)
+Writing at 0x0001fc00... (52 %)
+Writing at 0x00020000... (52 %)
+Writing at 0x00020400... (53 %)
+Writing at 0x00020800... (54 %)
+Writing at 0x00020c00... (55 %)
+Writing at 0x00021000... (56 %)
+Writing at 0x00021400... (56 %)
+Writing at 0x00021800... (57 %)
+Writing at 0x00021c00... (58 %)
+Writing at 0x00022000... (59 %)
+Writing at 0x00022400... (60 %)
+Writing at 0x00022800... (60 %)
+Writing at 0x00022c00... (61 %)
+Writing at 0x00023000... (62 %)
+Writing at 0x00023400... (63 %)
+Writing at 0x00023800... (64 %)
+Writing at 0x00023c00... (65 %)
+Writing at 0x00024000... (65 %)
+Writing at 0x00024400... (66 %)
+Writing at 0x00024800... (67 %)
+Writing at 0x00024c00... (68 %)
+Writing at 0x00025000... (69 %)
+Writing at 0x00025400... (69 %)
+Writing at 0x00025800... (70 %)
+Writing at 0x00025c00... (71 %)
+Writing at 0x00026000... (72 %)
+Writing at 0x00026400... (73 %)
+Writing at 0x00026800... (73 %)
+Writing at 0x00026c00... (74 %)
+Writing at 0x00027000... (75 %)
+Writing at 0x00027400... (76 %)
+Writing at 0x00027800... (77 %)
+Writing at 0x00027c00... (78 %)
+Writing at 0x00028000... (78 %)
+Writing at 0x00028400... (79 %)
+Writing at 0x00028800... (80 %)
+Writing at 0x00028c00... (81 %)
+Writing at 0x00029000... (82 %)
+Writing at 0x00029400... (82 %)
+Writing at 0x00029800... (83 %)
+Writing at 0x00029c00... (84 %)
+Writing at 0x0002a000... (85 %)
+Writing at 0x0002a400... (86 %)
+Writing at 0x0002a800... (86 %)
+Writing at 0x0002ac00... (87 %)
+Writing at 0x0002b000... (88 %)
+Writing at 0x0002b400... (89 %)
+Writing at 0x0002b800... (90 %)
+Writing at 0x0002bc00... (91 %)
+Writing at 0x0002c000... (91 %)
+Writing at 0x0002c400... (92 %)
+Writing at 0x0002c800... (93 %)
+Writing at 0x0002cc00... (94 %)
+Writing at 0x0002d000... (95 %)
+Writing at 0x0002d400... (95 %)
+Writing at 0x0002d800... (96 %)
+Writing at 0x0002dc00... (97 %)
+Writing at 0x0002e000... (98 %)
+Writing at 0x0002e400... (99 %)
+Writing at 0x0002e800... (100 %)
+Wrote 125952 bytes at 0x00010000 in 4.3 seconds (236.4 kbit/s)...
+Hash of data verified.
+Erasing flash...
+Took 0.06s to erase flash block
+Writing at 0x00008000... (33 %)
+Writing at 0x00008400... (66 %)
+Writing at 0x00008800... (100 %)
+Wrote 3072 bytes at 0x00008000 in 0.1 seconds (249.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

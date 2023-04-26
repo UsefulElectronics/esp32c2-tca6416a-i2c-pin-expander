@@ -1,0 +1,5 @@
+[1/4] cd /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/esp-idf/esptool_py && /home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/ward/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/partition_table/partition-table.bin /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/i2c-simple.bin
+i2c-simple.bin binary size 0x1e8f0 bytes. Smallest app partition is 0x100000 bytes. 0xe1710 bytes (88%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/bootloader/esp-idf/esptool_py && /home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/ward/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/bootloader/bootloader.bin
+Bootloader binary size 0x4980 bytes. 0x3680 bytes (43%) free.

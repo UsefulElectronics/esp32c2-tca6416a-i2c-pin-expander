@@ -1,0 +1,66 @@
+    "psi-header.templates": 
+    [
+        {
+            "language": "*",
+            "template": [
+                "******************************************************************************",
+                "@file  : <<filename>>",
+                "File   : <<filecreated('dddd, Do MMMM YYYY h:mm:ss a')>>",
+                "@author: WARD ALMASARANI",
+                "@date  : <<dateformat('dddd, Do MMMM YYYY h:mm:ss a')>>",
+                "@link  : https://www.youtube.com/@usefulelectronics",
+                "Hold Ctrl button and click on the link to be directed to
+                Useful Electronics YouTube channel	",
+                "******************************************************************************"
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "INCLUDES ------------------------------------------------------------------",
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "PRIVATE STRUCTRES ---------------------------------------------------------",
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "VARIABLES -----------------------------------------------------------------",
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "DEFINITIONS ---------------------------------------------------------------",
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "MACROS --------------------------------------------------------------------",
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "RIVATE FUNCTIONS DECLARATION ----------------------------------------------",
+            ],
+        },
+        {
+            "language": "*",
+            "template": 
+            [
+                "FUNCTION PROTOTYPES -------------------------------------------------------",
+            ],
+        }
+    ],

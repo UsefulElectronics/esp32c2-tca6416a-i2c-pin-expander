@@ -1,0 +1,46 @@
+-- Existing sdkconfig '/home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/sdkconfig' renamed to '/home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/sdkconfig.old'.
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/ward/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/ward/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/ward/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c2
+-- Project sdkconfig file /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.6") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "i2c-simple" version: v5.1-dev-4375-g42261df71f
+-- Adding linker script /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_system/ld/esp32c2/sections.ld.in
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.api.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.rvfp.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.newlib.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.version.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.mbedtls.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.newlib-nano.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/esp_rom/esp32c2/ld/esp32c2.rom.heap.ld
+-- Adding linker script /home/ward/esp/esp-idf/components/soc/esp32c2/ld/esp32c2.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/ward/esp/esp-idf/components/app_trace /home/ward/esp/esp-idf/components/app_update /home/ward/esp/esp-idf/components/bootloader /home/ward/esp/esp-idf/components/bootloader_support /home/ward/esp/esp-idf/components/bt /home/ward/esp/esp-idf/components/cmock /home/ward/esp/esp-idf/components/console /home/ward/esp/esp-idf/components/cxx /home/ward/esp/esp-idf/components/driver /home/ward/esp/esp-idf/components/efuse /home/ward/esp/esp-idf/components/esp-tls /home/ward/esp/esp-idf/components/esp_adc /home/ward/esp/esp-idf/components/esp_app_format /home/ward/esp/esp-idf/components/esp_coex /home/ward/esp/esp-idf/components/esp_common /home/ward/esp/esp-idf/components/esp_eth /home/ward/esp/esp-idf/components/esp_event /home/ward/esp/esp-idf/components/esp_gdbstub /home/ward/esp/esp-idf/components/esp_hid /home/ward/esp/esp-idf/components/esp_http_client /home/ward/esp/esp-idf/components/esp_http_server /home/ward/esp/esp-idf/components/esp_https_ota /home/ward/esp/esp-idf/components/esp_https_server /home/ward/esp/esp-idf/components/esp_hw_support /home/ward/esp/esp-idf/components/esp_lcd /home/ward/esp/esp-idf/components/esp_local_ctrl /home/ward/esp/esp-idf/components/esp_mm /home/ward/esp/esp-idf/components/esp_netif /home/ward/esp/esp-idf/components/esp_netif_stack /home/ward/esp/esp-idf/components/esp_partition /home/ward/esp/esp-idf/components/esp_phy /home/ward/esp/esp-idf/components/esp_pm /home/ward/esp/esp-idf/components/esp_psram /home/ward/esp/esp-idf/components/esp_ringbuf /home/ward/esp/esp-idf/components/esp_rom /home/ward/esp/esp-idf/components/esp_system /home/ward/esp/esp-idf/components/esp_timer /home/ward/esp/esp-idf/components/esp_wifi /home/ward/esp/esp-idf/components/espcoredump /home/ward/esp/esp-idf/components/esptool_py /home/ward/esp/esp-idf/components/fatfs /home/ward/esp/esp-idf/components/freertos /home/ward/esp/esp-idf/components/hal /home/ward/esp/esp-idf/components/heap /home/ward/esp/esp-idf/components/http_parser /home/ward/esp/esp-idf/components/idf_test /home/ward/esp/esp-idf/components/ieee802154 /home/ward/esp/esp-idf/components/json /home/ward/esp/esp-idf/components/log /home/ward/esp/esp-idf/components/lwip /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/main /home/ward/esp/esp-idf/components/mbedtls /home/ward/esp/esp-idf/components/mqtt /home/ward/esp/esp-idf/components/newlib /home/ward/esp/esp-idf/components/nvs_flash /home/ward/esp/esp-idf/components/openthread /home/ward/esp/esp-idf/components/partition_table /home/ward/esp/esp-idf/components/protobuf-c /home/ward/esp/esp-idf/components/protocomm /home/ward/esp/esp-idf/components/pthread /home/ward/esp/esp-idf/components/riscv /home/ward/esp/esp-idf/components/sdmmc /home/ward/esp/esp-idf/components/soc /home/ward/esp/esp-idf/components/spi_flash /home/ward/esp/esp-idf/components/spiffs /home/ward/esp/esp-idf/components/tcp_transport /home/ward/esp/esp-idf/components/ulp /home/ward/esp/esp-idf/components/unity /home/ward/esp/esp-idf/components/usb /home/ward/esp/esp-idf/components/vfs /home/ward/esp/esp-idf/components/wear_levelling /home/ward/esp/esp-idf/components/wifi_provisioning /home/ward/esp/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander/build
