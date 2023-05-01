@@ -245,7 +245,7 @@ IDF_TOOLCHAIN:STRING=gcc
 PROJECT_SOURCE_DIR:UNINITIALIZED=/home/ward/esp/esp-idf/work_space/esp32c2-ph41a-pin-expander
 
 //No help, variable specified on the command line.
-PYTHON:UNINITIALIZED=/home/ward/.espressif/python_env/idf5.1_py3.10_env/bin/python
+PYTHON:UNINITIALIZED=python
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
