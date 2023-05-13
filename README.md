@@ -1,3 +1,28 @@
+
+[![Build Status](https://img.shields.io/badge/USEFUL%20ELECTRONICS-YOUTUBE-red)](https://www.youtube.com/user/wardzx1)
+
+# Sponsors
+
+### PCBWay
+Tutorial Series Sponsor PCBWay Website. You can get extra free coupons using the link below:
+
+[<img src="https://github.com/UsefulElectronics/esp32s3-gc9a01-lvgl/blob/main/banner/banner(320x100).gif">](https://www.pcbway.com/setinvite.aspx?inviteid=582640)
+
+***
+
+# ESP32C2 TCA6416A IO Expansion Driving 7-Segment Display
+
+### [Tutorial Link](https://youtu.be/77VYMpIAbq4) On [![Build Status](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/wardzx1) 
+
+In this tutorial, ESP32C2 is used to interface 2 digits 7 segments display using TCA6416A pin expander that communicates over I2C. TCA6416A has 16 input and output pin interface capability. In this simple project every single pin is connected to an LED to represent a segment.
+
+3D printed LED defuser is used to make the number representation more meaningful.
+
+ESP32C2 is also called ESP8684
+
+![Circuit Diagram](https://github.com/UsefulElectronics/esp32c2-tca6416a-i2c-pin-expander/blob/main/circuit-diagram/IMG_0234.PNG)
+***
+
 | Supported Targets | ESP32 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- |
 
